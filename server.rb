@@ -1,8 +1,5 @@
 require 'sinatra'
-
-get '/' do
-  erb :index
-end
+require './models/siskel.rb'
 
 get '/movie' do
   movie = Siskel.new("Lion King")
