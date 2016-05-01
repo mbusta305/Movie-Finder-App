@@ -1,13 +1,23 @@
 <!-- views/index.erb -->
 <!DOCTYPE html>
-<html>
+<html style=
+    "background-color: lightgreen;"
+>
   <head>
     <meta charset="utf-8">
     <title>MovieFinder</title>
   </head>
-  <body>
-  <h1>MovieFinder</h1>
+  <body style= "text-align: center;"
+>
 
+    <h1>Plot-Finder:</h1>
 
-</body>
+    <h2><%= @movie.title %></h2>
+    <p><%= @movie.plot %></p>
+
+    <h5>Movie Search: </h5>
+    <form>
+        <input type="search" name="title">
+    </form>
+  </body>
 </html>
